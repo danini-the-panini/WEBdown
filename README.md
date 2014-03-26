@@ -20,7 +20,7 @@ The original WEB program by Knuth provided the commands TANGLE and WEAVE, which 
 
 WEBdown extends Markdown's syntax by adding the `<{ ... }>` syntax, which is used to refer to named source blocks. For example, the following code refers to a source block called `Hello World`.
 
-        <{ Hello World }>
+      <{ Hello World }>
 
 Source blocks can be assigned to using the `<{ ... }>=` syntax.
 
@@ -72,6 +72,13 @@ How to install it
 It should be as simple as running `make`. If successful, it should produce the `tangle` executable. If not, tell me about the problem.
 
 There are no dependencies, except for a C++11 standard compiler.
+
+TO-DO
+-----
+
+  * Make a proper `weave` command that allows referenced code blocks to be clickable.
+  * Maybe add macros
+  * Re-write the `tangle` command as a literate program.
 
 Legal stuff
 -----------
