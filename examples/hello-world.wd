@@ -1,7 +1,9 @@
 Hello World
 ===========
 
-The Meat of It
+This is a simple hello world program written in C++ as a literate program. It is an example used to demonstrate how WEBdown works.
+
+The Meat of it
 --------------
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
@@ -26,8 +28,8 @@ In order to print to the screen we need to include some library that can enable 
 
 See that? There's more than one line in that code block. We can do that.
 
-What are we printing
---------------------
+What are we printing?
+---------------------
 
 Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
 
@@ -42,7 +44,7 @@ We need that namespace
 
 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
 
-We also need the following line of code to make it work. See that we can append to existing code blocks. Now that is what I call neat.
+We also need the following line of code to make it work. Notice how we can append code to an existing code block.
 
   <{ Includes }>+=
 
@@ -53,7 +55,7 @@ Putting it all together
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 
-This is the Main code block. It's a special code block that starts everything off.
+This is the Main code block. It's a special code block that puts everything together.
 
   <{ Main }>=
 
