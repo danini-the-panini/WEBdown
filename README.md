@@ -16,7 +16,7 @@ WEBdown is an implementation of WEB that uses Markdown instead of TeX, and can w
 How does it work?
 -----------------
 
-The original WEB program by Knuth provided the commands TANGLE and WEAVE, which given a .WEB file would produce source code and a TeX document respectivly. WEBdown also provides a TANGLE command, extracting the named source blocks in a .wd file and producting the complete source code.
+The original WEB program by Knuth provided the commands TANGLE and WEAVE, which given a .WEB file would produce source code and a TeX document respectivly. WEBdown also provides the TANGLE and WEAVE commands, the former extracting named code blocks from a special Markdown file, and the latter converting the special Markdown file into HTML.
 
 WEBdown extends Markdown's syntax by adding the `<{ ... }>` syntax, which is used to refer to named source blocks. For example, the following code refers to a source block called `Hello World`.
 
