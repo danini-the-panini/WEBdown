@@ -49,6 +49,19 @@ With any WEBdown file, the source block with the name `Main` will be used as the
 
 Instead of providing a WEAVE command, as in Knuth's original implementation, any standard Markdown converter will be able to interpret a .wd file as normal Markdown. The `<{ ... }>` syntax will be ignored, which is a bit of a bummer. However, you can simply pre-process this out using `sed` or something similar.
 
+How to use it
+-------------
+
+The `tangle` command will read from STDIN if no arguments are provided.
+
+    $ tangle < foo.wd
+
+Alternatively, a file name can be provided as an argument, and `tangle` will attempt to open the file and use its contents as input.
+
+    $ tangle bar.wd
+
+Any arguments after the first will be ignored.
+
 How to install it
 -----------------
 
