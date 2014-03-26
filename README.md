@@ -47,7 +47,7 @@ Source blocks can then be referenced withing other source blocks.
 
 With any WEBdown file, the source block with the name `Main` will be used as the entry point when using the `tangle` command. If there is no such source block, the `tangle` command will fail.
 
-The `weave` command is implemented as a simple bash script that does a bit of `sed` to replace the `<{ ...}>` syntax with a nicer looking &lang; &hellip; &rang; and ultimately just uses the standard PERL implementation of Markdown (Provided as `Markdown.pl`) to do all the real work.
+The `weave` command is implemented as a simple bash script that does a bit of `sed` to replace the `<{ ... }>` syntax with a nicer looking &lang; &hellip; &rang; and ultimately just uses the original PERL implementation of Markdown to do all the real work.
 
 How to use it
 -------------
