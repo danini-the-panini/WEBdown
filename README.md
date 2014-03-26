@@ -47,7 +47,7 @@ Source blocks can then be referenced withing other source blocks.
 
 With any WEBdown file, the source block with the name `Main` will be used as the entry point when using the `tangle` command. If there is no such source block, the `tangle` command will fail.
 
-Instead of providing a WEAVE command, as in Knuth's original implementation, any standard Markdown converter will be able to interpret a .wd file as normal Markdown. The `<{ ... }>` syntax will be ignored, which is a bit of a bummer. However, you can simply pre-process this out using `sed` or something similar.
+The `weave` command is implemented as a simple bash script that does a bit of `sed` to replace the `<{ ...}>` syntax with a nicer looking &lang; &hellip; &rang; and ultimately just uses the standard PERL implementation of Markdown (Provided as `Markdown.pl`) to do all the real work.
 
 How to use it
 -------------
@@ -56,11 +56,15 @@ The `tangle` command will read from STDIN if no arguments are provided.
 
     $ tangle < foo.wd
 
-Alternatively, a file name can be provided as an argument, and `tangle` will attempt to open the file and use its contents as input.
+Alternatively, a file name can be provided as an argument, and `tangle` will attempt to open the file and use its contents as input. Any arguments after the first will be ignored.
 
     $ tangle bar.wd
 
-Any arguments after the first will be ignored.
+The weave command works simply by providing the shell script with an argument specifying the .wd file
+
+    $ weave baz.wd
+
+The output will be an HTML file with the same name as the given file.
 
 How to install it
 -----------------
