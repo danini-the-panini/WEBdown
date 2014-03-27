@@ -79,6 +79,9 @@ TO-DO
 -----
 
   * Make a proper `weave` command that allows referenced code blocks to be clickable.
+  * Make WEBdown more like Knuth's WEB by specifying one code block per section, and code blocks must be at the end of sections.
+  * Number sections and subsections, and use the numbers as in Knuth's WEB.
+  * Include the `@` directives as in Knuth's WEB (somehow, maybe changing them a bit)
   * Maybe add macros
   * Re-write the `tangle` command as a literate program.
 
